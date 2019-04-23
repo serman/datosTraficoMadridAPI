@@ -1,0 +1,3 @@
+[submodule "consultas/VisorDatosTraficoMadrid"]
+	path = consultas/VisorDatosTraficoMadrid
+	url = git@github.com:serman/VisorDatosTraficoMadrid.git
