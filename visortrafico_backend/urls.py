@@ -15,7 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from consultas.views import basicQueryViewSet
+from rest_framework.routers import DefaultRouter
+from django.conf.urls import include, url
+
+
+router = DefaultRouter()
+router.register(r'query', basicQueryViewSet, base_name='query')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+     url(r'^', include(router.urls)),
+    #path(r'query/', basicQueryViewSet.as_view(), name='query')
 ]
