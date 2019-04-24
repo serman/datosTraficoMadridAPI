@@ -1,0 +1,7 @@
+Django==2.2
+djangorestframework==3.9.2
+et-xmlfile==1.0.1
+jdcal==1.4.1
+openpyxl==2.6.2
+pytz==2019.1
+sqlparse==0.3.0
