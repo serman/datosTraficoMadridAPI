@@ -1,17 +1,23 @@
 # datosTraficoMadridAPI
-# create virtual env
+## create virtual env
 python3 -m venv datosTraficoApi
 
 source venv/bin/activate
-# create virtual env
+
+## get code
 git clone git@github.com:serman/datosTraficoMadridAPI.git
 cd datosTraficoMadridAPI
 
-#descargamos submodulo https://github.com/serman/VisorDatosTraficoMadrid
+##descargamos submodulo 
+desde https://github.com/serman/VisorDatosTraficoMadrid
 git submodule update --init --recursive
 cd visortrafico_backend/consultas/VisorDatosTraficoMadrid
 git pull https://github.com/serman/VisorDatosTraficoMadrid.git master
 
-#desde el directorio raiz de instalacion ejecutamos el servidor django.
+
+Desde el directorio raiz de instalacion instalamos dependencias:
+pip install -r requeriments.text
+ 
+#ejecutamos el servidor django.
 python manage.py runserver 0.0.0.0:80080
 
