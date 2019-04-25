@@ -1,4 +1,5 @@
 # datosTraficoMadridAPI
+Hace falta tener instalado python3 virtualenv y pip
 ## create virtual env
 python3 -m venv datosTraficoApi
 
@@ -8,7 +9,8 @@ source venv/bin/activate
 git clone git@github.com:serman/datosTraficoMadridAPI.git
 cd datosTraficoMadridAPI
 
-##descargamos submodulo 
+## descargamos submodulo 
+
 desde https://github.com/serman/VisorDatosTraficoMadrid
 git submodule update --init --recursive
 cd visortrafico_backend/consultas/VisorDatosTraficoMadrid
